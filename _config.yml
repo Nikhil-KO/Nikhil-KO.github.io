@@ -18,24 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Portfolio
+title: Nikhil KO - Portfolio
 email: nikhiloommen12@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My portfolio site - past, current and future projects. Interactive. Resume. Built using Jekyll, hosted on GitHub Pages.
-baseurl: /docs
-url: https://nikhil-ko.github.io
-twitter_username: jekyllrb
+  Nikhil Kalamannil Oommen - Software Engineer - Portolio. Computer Science at University of Warwick. 
+  Built using Jekyll, hosted on Github Pages.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
 github_username:  Nikhil-KO
-
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 
 # Build settings
 theme: minima
