@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="{{ "/assets/css/construction.css" | relative_url }}">
+<div id="banner-div">
+    <img src="{{ "assets/images/nightSky.jpg" | relative_url }}" alt="banner image">
+    <img src="{{ "assets/images/mountain.jpg" | relative_url }}" id="top" alt="banner image">
+    <div class="container">
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Under Construction!</h4>
+            <p>Aww yeah, this site is currently being renovated! Its being rebuit from scratch using Jekyll and all the good web design tech like bootstrap and sass.</p>
+            <p>Check out the dark mode feature which I installed from scratch! Code available on GitHub (tutorial coming soon)</p>
+        </div>
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Software Engineer</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>University of Warwick - Computer Science Final Year</li>
+                    <li>First Class average in 1st and 2nd Year</li>
+                    <li>Software Engineer at a Tech Start Up</li>
+                    <li>More coming soon</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">CV</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Web Developer</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>HTML, JavaScript, CSS</li>
+                    <li>Experience with Flask, NodeJS, Firebase</li>
+                    <li>SQL</li>
+                    <!-- TODO link the site to blog of making it and QueueTube coming soon-->
+                    <li><a href={% post_url 2020-07-10-Making-This-Site %}>This website</a></li>
+                    <li>QueueTube (current project)</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">View All Projects</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Stuff</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>I decided I needed a third card but I'm running out of stuff to stay...</li>
+                    <li>Cool projects coming soon</li>
+                    <li><a href={% post_url 2020-07-14-Top-Games-List %}>My video game ranking</a></li>
+                    <li>Feel free to contact me using the details below</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

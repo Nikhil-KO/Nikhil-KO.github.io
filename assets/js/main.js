@@ -6,19 +6,19 @@ function debugPrint(msg) {
     }
 }
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
-//     constructionBanner();
+    constructionBanner();
     
-//     function constructionBanner() {
-//         let themeStored = localStorage.getItem('theme') === "true";
-//         debugPrint("changing banner");
-//         if (themeStored) {
-//             $("#top").css("opacity", 0);
-//         } else {
-//             $("#top").css("opacity", 100);
-//         }
-//     }
+    function constructionBanner() {
+        let themeStored = localStorage.getItem('theme') === "true";
+        debugPrint("changing banner");
+        if (themeStored) {
+            $("#top").css("opacity", 0);
+        } else {
+            $("#top").css("opacity", 100);
+        }
+    }
     
-//     $("#darkModeSwitch").change(constructionBanner);
-// });
+    $("#darkModeSwitch").change(constructionBanner);
+});
