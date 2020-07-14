@@ -1,20 +1,16 @@
 let userPreference = window.matchMedia("(prefers-color-scheme: dark)"); 
 let themeStored = localStorage.getItem('theme') === "true";
 
-console.log(themeStored);
+debugPrint("found stored theme: " + themeStored);
 
 // First time user comes to site theme is not set so get from thier preferences
 if (themeStored === null) {
 	if (userPreference.matches) {
-		console.log("user on dark mode");
-		$("#darkModeSwitch")[0].checked = true;
-		localStorage.setItem('theme', true);
-		document.documentElement.setAttribute('data-theme', 'dark');
+		debugPrint("user preference on dark mode");
+		setDarkMode();
 	} else {
-		console.log("user on light");
-		$("#darkModeSwitch")[0].checked = false;
-		localStorage.setItem('theme', false);
-		document.documentElement.setAttribute('data-theme', 'light');
+		debugPrint("user preference on light");
+		setLightMode();
 	}
 } else {
 	if (themeStored) {
@@ -40,6 +36,7 @@ function setLightMode() {
 }
 
 function modeSwitcher() {
+	debugPrint("user switching theme")
 	let theme = $("#darkModeSwitch")[0].checked;
 	if (theme === true) {
 		setDarkMode();
