@@ -7,46 +7,20 @@
 	<title>{{ page.title }} - {{ site.title }}</title>
 	{% include header.html %}
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="{{ "/assets/css/lapidux/proxy/main.css" | relative_url }}">
 </head>
 
 <body>
 	{% include navbar.html %}
 	
-	
+	{{ content }}
 
-	<div class="container">
-		<br>
-		<table id="table_id" class="display">
-			<thead>
-				<tr>
-					<th>Ranking</th>
-					<th>Country</th>
-					<th>Ping (ms)</th>
-					<th>IP Address</th>
-					<th>Port</th>
-					<th>Copy</th>
-				</tr>
-			</thead>
-			<tbody>
-			</tbody>
-		</table>
-
-<!-- 
-		{%- for proxy in site.data.lapidux_sample_proxy -%}
-			{{ forloop.index }}:
-			{%- for item in proxy -%}
-				{{ item }} <br>
-			{%- endfor -%}
-			<br>
-		{%- endfor -%}
-		{{ content}} -->
-	</div>
-
+	{% include footer.html %}
 </body>
-{% include footer.html %}
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 <script>
 	const testData = {{ site.data.lapidux_sample_proxy | jsonify }};
 </script>
-<script src="{{ "/assets/js/lapidux/tableSample.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/lapidux/table.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/lapidux/verification.js" | relative_url }}"></script>
 </html>
