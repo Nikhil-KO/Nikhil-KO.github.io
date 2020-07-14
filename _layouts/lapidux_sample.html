@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>{{ page.title }} - {{ site.title }}</title>
+	{% include header.html %}
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+</head>
+
+<body>
+	{% include navbar.html %}
+	
+	
+
+	<div class="container">
+		<br>
+		<table id="table_id" class="display">
+			<thead>
+				<tr>
+					<th>Ranking</th>
+					<th>Country</th>
+					<th>Ping (ms)</th>
+					<th>IP Address</th>
+					<th>Port</th>
+					<th>Copy</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+<!-- 
+		{%- for proxy in site.data.lapidux_sample_proxy -%}
+			{{ forloop.index }}:
+			{%- for item in proxy -%}
+				{{ item }} <br>
+			{%- endfor -%}
+			<br>
+		{%- endfor -%}
+		{{ content}} -->
+	</div>
+
+</body>
+{% include footer.html %}
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script>
+	const testData = {{ site.data.lapidux_sample_proxy | jsonify }};
+</script>
+<script src="{{ "/assets/js/lapidux/tableSample.js" | relative_url }}"></script>
+</html>
