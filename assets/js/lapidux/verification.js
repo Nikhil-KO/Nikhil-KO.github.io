@@ -21,7 +21,8 @@ function uploadIp() {
             "Access-Control-Allow-Origin": "*"
         },
         "processData": false,
-        "data": "{\n\t\"Proxies\":[\"191.232.170.36:80\", \"46.35.183.214:8080\", \"\"],\n\t\"ProxyType\": \"Socks4\" \n}"
+        "data": data
+        //"data": "{\n\t\"Proxies\":[\"191.232.170.36:80\", \"46.35.183.214:8080\", \"\"],\n\t\"ProxyType\": \"Socks4\" \n}"
     }
       
     $.ajax(settings).done(function(data, status, jqXHR) {
