@@ -6,6 +6,11 @@ function debugPrint(msg) {
     }
 }
 
+function scrollContacts() {
+    window.scrollTo(0,document.body.scrollHeight);
+    return false;
+}
+
 $(document).ready(function() {
 
     constructionBanner();

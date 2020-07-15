@@ -1,4 +1,6 @@
 ---
-layout: default
+layout: home
 title: "Home"
 ---
+# Education
+# Projects

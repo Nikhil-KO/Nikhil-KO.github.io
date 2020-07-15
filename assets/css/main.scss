@@ -2,12 +2,14 @@
 ---
 
 html[data-theme="light"] {
+	scroll-behavior: smooth;
 	--link-color: rgb(0, 112, 201);
   	--main-background-color: hsl(0, 0%, 90%);
   	--main-text-color: hsl(0, 0%, 20%);
 }
 
 html[data-theme="dark"] {
+	scroll-behavior: smooth;
   	--link-color:  #2BE022;
   	--main-background-color: hsl(217.5, 42.1%, 7.5%);
   	--main-text-color: hsl(0, 0%, 85%); 
