@@ -5,7 +5,7 @@ html[data-theme="light"] {
 	scroll-behavior: smooth;
 	--link-color: rgb(0, 112, 201);
   	--main-background-color: hsl(0, 0%, 90%);
-  	--main-text-color: hsl(0, 0%, 20%);
+	--main-text-color: hsl(0, 0%, 20%);
 }
 
 html[data-theme="dark"] {
@@ -42,4 +42,16 @@ h2 {
 
 p {
 	font-size: 1.25rem;
+}
+
+hr {
+	display: block; 
+	height: 1px;
+	border: 0;
+	border-top: 1px solid var(--link-color);
+	margin: 1em 0; padding: 0; 
+}
+
+.btn-primary:hover {
+	background-color: var(--link-color);
 }
