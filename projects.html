@@ -1,0 +1,66 @@
+---
+layout: default
+title: "All Projects"
+---
+<link rel="stylesheet" href="{{ "/assets/css/projects.css" | relative_url }}">
+
+<h1>Current Projects</h1>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="row">
+                <div class="col-md-auto">
+                    <img src="{{ "/assets/images/youTubeIcon.png" | relative_url }}" class="projectImage" style="margin-top: 15px;" alt="YouTube Icon">
+                    <br>
+                </div>
+                <div class="col-sm">
+                    <h3>
+                        QueueTube
+                    </h3>
+                    <hr>
+                    Created for my cumpulsion to watch ALL the videos in my subscriptions in the order they were released.
+                    This web app is being developed to automatically create and maintain a database of videos to watch.
+                    It uses <a href="https://developers.google.com/identity/protocols/oauth2">Google OAuth2</a> to securely access your subscribed channels,
+                    using this information and the <a href="https://developers.google.com/youtube/v3">YouTube API</a>, a database of videos to watch is built for each user.
+                    The app will be hosted on <a href="https://www.heroku.com/">Heroku</a> Free Tier once it is completed. 
+                    <br>
+                    <a href={% post_url 2020-07-16-QueueTube %}>
+                        <button class="btn btn-lg btn-block btn-primary">
+                            View Development
+                            <img src="{{ "/assets/images/devIcon.png" | relative_url }}" class="miniButtonIcon" alt="GitHub Icon">
+                        </button>
+                        <button class="btn btn-lg btn-block btn-dark" disabled>
+                            GitHub (coming soon)
+                            <img src="{{ "/assets/images/githubIcon.png" | relative_url }}" class="miniButtonIcon" alt="GitHub Icon">
+                        </button>
+                        <button class="btn btn-lg btn-block btn-dark" disabled>
+                            Site (coming soon)
+                            <img src="{{ "/assets/images/deploy.png" | relative_url }}" class="miniButtonIcon" alt="Deploy Icon">
+                        </button>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><hr><br>
+    <div class="row">
+        <div class="col-md-auto">
+            <img src="{{ "/assets/images/ml.jpg" | relative_url }}" class="projectImage" alt="Machine learning"> 
+            <br>
+        </div>
+        <div class="col-sm">
+            <h3>
+                Frame Label
+            </h3>
+            <hr>
+            Developed during work for iCuris. I a needed to a simple software to quickly label image sets for training my neural network model. 
+            There exsists solutions for single frame labeling such as <a href="https://github.com/microsoft/VoTT">Microsoft's solution</a> but I needed one for working with
+            specifically groups of images. The app is currently prototyped using the Python library TKinter and specifically built for dealing with the datasets used in my work 
+            at iCuris, but I plan on extending to variable input method. 
+            <br>
+            Cannot release details until the project is ready.
+        </div>
+    </div>
+  </div>
