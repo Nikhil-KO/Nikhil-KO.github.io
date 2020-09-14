@@ -22,7 +22,7 @@ First class average in 1st and 2nd years. Key modules listed:
 * Programming - objected oriented principles and design
 * Data Structures – Design and analysis of
 algorithms
-* Mathematics for Computer Scientists 1 and 2 - discrete and continous math
+* Mathematics for Computer Scientists 1 and 2 - discrete and continuous math
 * Computer Organisation & Architecture - bottom up view of hardware design
 * Functional Programming - haskell and lambda calculus
 * Visualisation - Processing and presenting data in graphical models 
@@ -30,7 +30,7 @@ algorithms
 ###### Second year
 * Operating Systems and Computer Networks - Understanding process life cycles and communication methods
 * Artificial Intelligence - Knowledge Based Systems, Agents, Searching and Planning
-* Advanced Computer Organisation & Architecture - Further look into hardware design and optimisation, course work focused on importance of threading and vectorisation to optimise code on modern multi core processors
+* Advanced Computer Organisation & Architecture - Further look into hardware design and optimization, course work focused on importance of threading and vectorization to optimise code on modern multi core processors
 * Software Engineering - – Project management, Design and Methodologies
 * Additional - DFAs, NFAs and turing machines. Prolog. Algorithm design and analysis. Databases and SQL.
 
