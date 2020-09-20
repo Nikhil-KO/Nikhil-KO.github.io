@@ -49,13 +49,32 @@ title: "All Projects"
     <br><hr><br>
     <div class="row">
         <div class="col-md-auto">
+            <img src="{{ "/assets/images/projects/cvht/demoImage1.png" | relative_url }}" class="projectImage" style="margin-top: 15px;" alt="Face Track demo">
             <br>
         </div>
         <div class="col-sm">
             <h3>
                 Computer vision based head tracking
             </h3>
-            
+            <hr>
+            A free open source head tracking solution using only image data from webcam.
+            Image processing using OpenCV and Dlib for facial landmark model.
+            GUI built using .NET and WPF. The resulting data is send to OpenTrack via a UDP socket, 
+            which is then translated to head movement in game.
+            <a href={% post_url 2020-09-14-CVHeadTrack %}>
+                <button class="btn btn-lg btn-block btn-primary">
+                    View Development
+                    <img src="{{ "/assets/images/devIcon.png" | relative_url }}" class="miniButtonIcon" alt="GitHub Icon">
+                </button>
+            </a>
+            <br>
+            <a href="https://github.com/Nikhil-KO/CVHeadTrack">
+                <button class="btn btn-lg btn-block btn-primary">
+                    GitHub
+                    <img src="{{ "/assets/images/githubIcon.png" | relative_url }}" class="miniButtonIcon" alt="GitHub Icon">
+                </button>
+            </a>
+            <br>
         </div>
     </div>
     <br><hr><br>
