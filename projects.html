@@ -86,26 +86,51 @@ title: "All Projects"
             <h3>
                 Virtual reality learning environment
             </h3>
-            
+            (Currently working on)
         </div>
     </div>
     <br><hr><br>
     <div class="row">
-        <div class="col-md-auto">
-            <img src="{{ "/assets/images/ml.jpg" | relative_url }}" class="projectImage" alt="Machine learning"> 
-            <br>
-        </div>
-        <div class="col-sm">
-            <h3>
-                Frame Label
-            </h3>
-            <hr>
-            Developed during work for iCuris. I needed a simple software to quickly label image sets for training my neural network model. 
-            There exists solutions for single frame labeling such as <a href="https://github.com/microsoft/VoTT">Microsoft's solution</a> but I needed one for working with
-            specifically groups of images. The app is currently prototyped using the Python library TKinter and specifically built for dealing with the datasets used in my work 
-            at iCuris. I hope I am able to extend to variable input and output method. 
-            <br>
-            Cannot release details until the project is ready.
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="{{ "/assets/images/ml.jpg" | relative_url }}" class="projectImageSmall" alt="Machine learning"> 
+                    <h3>
+                        Frame Label
+                    </h3>
+                    <hr>
+                    Developed during work for iCuris. I needed a simple software to quickly label image sets for training my neural network model. 
+                    There exists solutions for single frame labeling such as <a href="https://github.com/microsoft/VoTT">Microsoft's solution</a> but I needed one for working with
+                    specifically groups of images. The app is currently prototyped using the Python library TKinter and specifically built for dealing with the datasets used in my work 
+                    at iCuris. I hope I am able to extend to variable input and output method. 
+                    <br>
+                    Cannot release details until the project is ready.
+                </div>
+                <div class="col">
+                    <img src="{{ "/assets/images/projects/cs261/homePage.png" | relative_url }}" class="projectImageSmall" alt="Trade monitor home page"> 
+                    <h3>
+                        Derivative Trade Monitor
+                    </h3>
+                    <hr>
+                    Group project part of the software engineering module. Application to enter and manage derivative trades.
+                    Using machine learning to detect anomalous inputs and automatic report generation using scheduling.
+                    Demo video linked below.
+                    <a href={% post_url 2020-09-26-CS261 %}>
+                        <button class="btn btn-lg btn-block btn-primary">
+                            View Development
+                            <img src="{{ "/assets/images/devIcon.png" | relative_url }}" class="miniButtonIcon" alt="GitHub Icon">
+                        </button>
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://youtu.be/od7Atyo414g">
+                        <button class="btn btn-lg btn-block btn-primary">
+                            Demo video
+                            <img src="{{ "/assets/images/deploy.png" | relative_url }}" class="miniButtonIcon" alt="Deploy Icon">
+                        </button> 
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
+    
+</div>
