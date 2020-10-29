@@ -2,7 +2,7 @@ let themeStored = localStorage.getItem('theme');
 
 // First time user default dark mode
 if (themeStored === null) {
-	setDarkMode();
+	setLightMode();
 } else {
 	if (themeStored === "true")
 		setDarkMode();
