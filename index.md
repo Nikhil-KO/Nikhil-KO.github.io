@@ -6,13 +6,22 @@ title: "Home"
 ### iCuris Ltd - Software Developer
 ###### 08/2019 – 09/2020 
 Research and development. iCuris is a start up company in the health care industry.
-* Prototyping and testing different neural networks for use in the health care industry. 
-* Designed and trained convolutional neural networks (CNN) from the ground up.
-* Developed a python GUI to preprocess and label input data for the CNN.
-* Worked with team to develop an efficient pipeline for data gathering and processing data from raspberry pi. 
-Threaded code for collection of microphone, camera and motion sensor data to server.
-* Implemented JWT based authentication for secure user access.
-* Utilized OpenVino and OpenCV for accelerated computer vision projects.
+* Design and training of CNNs using TensorFlow,
+resulted in a successful model with high enough
+accuracy for the prototype.
+* Developed Python GUI to label training and
+validation data.
+* Required skeletal position to be extracted from
+images, utilized OpenVino technology to
+accelerate human pose estimation and extract
+key features into Python objects.
+* Designed threaded code for automated data
+capture from multiple sensors on a Raspberry Pi.
+* Collaborated with team to develop website for
+user registration and device management tools.
+Technologies included JWT token authentication
+and industry-standard Bootstrap, jQuery.
+* Worked with and built upon REST API using Flask
 
 # <ins>Education</ins>
 ### ![University of Warwick Logo](/assets/images/WarwickArms.png){:height="50px"} University of Warwick - BSc Computer Science
@@ -36,6 +45,9 @@ algorithms
 
 ###### Third year
 (current year)
+* Machine Learning
+* Computer Graphics
+
 # <ins>Projects</ins>
 Projects I have undertaken during and outside of University can be found [here!]({{ site.baseurl }}{% link projects.html %})
 
